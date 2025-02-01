@@ -4218,19 +4218,11 @@
 
 .navbar {
   z-index: 999;
-  background-color: var(--white-solid);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  border-radius: 1rem;
-  max-width: 80%;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #0000;
   padding: .5rem 3%;
   font-family: Inter, sans-serif;
   position: relative;
   inset: 0% 0% auto;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .icon-small-6 {
