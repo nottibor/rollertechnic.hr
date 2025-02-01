@@ -36,9 +36,10 @@
   --flowui-component-library--white: white;
   --flowui-component-library--grey-600: #393b6a;
   --untitled-ui--primary500: #9e77ed;
-  --flowui-component-library--grey-300: #e4e6f1;
+  --see-through-blue: #0b22750d;
   --color: #2e5f42;
   --flowui-component-library--gray-100: #f7f9fd;
+  --flowui-component-library--grey-300: #e4e6f1;
 }
 
 .w-layout-grid {
@@ -5636,6 +5637,10 @@
   display: flex;
 }
 
+.button-link:hover {
+  color: var(--deep-blue);
+}
+
 .h6-heading-2 {
   color: var(--deep-blue);
   letter-spacing: -.04em;
@@ -6636,7 +6641,14 @@
   margin: 0 0 4rem;
 }
 
-.margin-bottom.margin-xsmall, .margin-bottom.margin-small, .margin-bottom.margin-xxlarge, .margin-bottom.margin-xxlarge, .margin-bottom.margin-xxsmall, .margin-bottom.margin-medium, .margin-bottom.margin-xxlarge, .margin-bottom.margin-large {
+.margin-bottom.margin-xsmall, .margin-bottom.margin-small, .margin-bottom.margin-xxlarge, .margin-bottom.margin-xxlarge, .margin-bottom.margin-xxsmall, .margin-bottom.margin-medium, .margin-bottom.margin-xxlarge {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-bottom.margin-large {
+  color: var(--deep-blue);
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -7970,6 +7982,7 @@
 }
 
 .form_field-wrapper {
+  text-decoration: none;
   position: relative;
 }
 
@@ -7978,9 +7991,15 @@
 }
 
 .form-fields {
-  border: 1px solid var(--deep-blue);
-  background-color: var(--flowui-component-library--grey-300);
+  border: 1.5px solid var(--deep-blue);
+  background-color: var(--see-through-blue);
+  color: var(--deep-blue);
   border-radius: 8px;
+}
+
+.form-fields:focus {
+  background-color: var(--deep-blue);
+  color: var(--light-grey);
 }
 
 .form-fields.message-box {
