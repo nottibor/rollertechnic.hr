@@ -10420,7 +10420,7 @@
   }
 
   .nav-button {
-    display: none;
+    display: block;
   }
 
   .button-primary-small-4 {
@@ -10638,6 +10638,7 @@
 }
 
 #w-node-_2765c465-ba79-2ce4-0bd3-505a9b0bf5be-622a51b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
   justify-self: start;
 }
 
