@@ -36,8 +36,8 @@
   --flowui-component-library--white: white;
   --flowui-component-library--grey-600: #393b6a;
   --untitled-ui--primary500: #9e77ed;
-  --see-through-blue: #0b22750d;
   --color: #2e5f42;
+  --see-through-blue: #0b22750d;
   --flowui-component-library--gray-100: #f7f9fd;
   --flowui-component-library--grey-300: #e4e6f1;
 }
@@ -6320,7 +6320,7 @@
 }
 
 .fn-paragraph-dark {
-  color: var(--light-grey);
+  color: var(--black-almost);
   margin-bottom: 32px;
   font-family: Open Sans, sans-serif;
   font-size: 16px;
@@ -6328,7 +6328,7 @@
 }
 
 .fn-heading-4 {
-  color: var(--light-grey);
+  color: var(--deep-blue);
   margin-top: 0;
   margin-bottom: 24px;
   font-family: Open Sans, sans-serif;
@@ -6345,7 +6345,7 @@
 }
 
 .fn-cta-banner {
-  background-color: var(--deep-blue);
+  background-color: var(--white-solid);
   color: #1d1f1e;
   text-align: center;
   border-radius: 24px;
@@ -7719,7 +7719,10 @@
 }
 
 .gallery8_image-wrapper-large {
+  background-color: var(--transparent-white);
+  border-radius: 1rem;
   width: 100%;
+  padding: .5rem;
   display: inline-block;
   position: relative;
 }
@@ -7727,6 +7730,7 @@
 .gallery8_image3 {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border-radius: .8rem;
   width: 100%;
   height: 100%;
 }
@@ -7750,6 +7754,7 @@
 .gallery8_image1 {
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: .8rem;
   width: 100%;
   height: 100%;
 }
@@ -7762,12 +7767,16 @@
 .gallery8_image2 {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border-radius: .8rem;
   width: 100%;
   height: 100%;
 }
 
 .gallery8_image-wrapper {
+  background-color: var(--transparent-white);
+  border-radius: 1rem;
   width: 100%;
+  padding: .5rem;
   display: inline-block;
   position: relative;
 }
@@ -7775,6 +7784,7 @@
 .gallery8_image4 {
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: .8rem;
   width: 100%;
   height: 100%;
 }
@@ -7992,9 +8002,8 @@
 
 .form-fields {
   border: 1.5px solid var(--deep-blue);
-  background-color: var(--see-through-blue);
   color: var(--deep-blue);
-  border-radius: 8px;
+  border-radius: .5rem;
 }
 
 .form-fields:focus {
