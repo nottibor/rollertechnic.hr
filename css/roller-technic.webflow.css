@@ -8003,11 +8003,14 @@
 .form-fields {
   border: 1.5px solid var(--deep-blue);
   color: var(--deep-blue);
+  background-color: #0000;
   border-radius: .5rem;
 }
 
 .form-fields:focus {
-  background-color: var(--deep-blue);
+  border-width: 2px;
+  border-color: var(--flowui-component-library--primary-base);
+  background-color: var(--white-solid);
   color: var(--light-grey);
 }
 
