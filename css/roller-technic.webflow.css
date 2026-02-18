@@ -51,51 +51,6 @@
   display: grid;
 }
 
-.w-checkbox {
-  margin-bottom: 5px;
-  padding-left: 20px;
-  display: block;
-}
-
-.w-checkbox:before {
-  content: " ";
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox:after {
-  content: " ";
-  clear: both;
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox-input {
-  float: left;
-  margin: 4px 0 0 -20px;
-  line-height: normal;
-}
-
-.w-checkbox-input--inputType-custom {
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  width: 12px;
-  height: 12px;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-checked {
-  background-color: #3898ec;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-color: #3898ec;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px #3898ec;
-}
-
 .uui-navbar06_styles {
   display: block;
   position: fixed;
@@ -10647,11 +10602,6 @@
 
 #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3dd9-0e86bebd, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddb-0e86bebd, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddd-0e86bebd, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddf-0e86bebd, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3dd9-eb40b16f, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddb-eb40b16f, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddd-eb40b16f, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddf-eb40b16f, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3dd9-36ffbf69, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddb-36ffbf69, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddd-36ffbf69, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddf-36ffbf69, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3dd9-a8000439, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddb-a8000439, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddd-a8000439, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddf-a8000439, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3dd9-f6a46b7b, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddb-f6a46b7b, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddd-f6a46b7b, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddf-f6a46b7b, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3dd9-2cea8728, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddb-2cea8728, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddd-2cea8728, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddf-2cea8728, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3dd9-95a516b2, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddb-95a516b2, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddd-95a516b2, #w-node-_59ddaab4-11d8-e928-4d4c-047a3cfe3ddf-95a516b2 {
   grid-area: span 1 / span 1 / span 1 / span 1;
-}
-
-#w-node-_2765c465-ba79-2ce4-0bd3-505a9b0bf5be-622a51b9 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
-  justify-self: start;
 }
 
 @media screen and (max-width: 991px) {
