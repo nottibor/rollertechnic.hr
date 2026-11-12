@@ -10743,8 +10743,8 @@
     font-size: 28px;
   }
   .navbar .nav-menu-5 {
-    max-height: calc(100vh - 96px);
-    max-height: calc(100dvh - 96px);
+    max-height: calc(100vh - 120px);
+    max-height: calc(100dvh - 120px);
     overflow-y: auto;
     overscroll-behavior: contain;
     padding: 12px;
