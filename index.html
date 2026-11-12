@@ -21,7 +21,7 @@
 .products-section-homepage .content-link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media screen and (max-width: 767px) { .products-section-homepage .content-link-grid { grid-template-columns: 1fr; } }
 </style>
-<link rel="stylesheet" href="css/roller-interactive.css?v=20261113-2"></head>
+<link rel="stylesheet" href="css/roller-interactive.css?v=20261113-3"></head>
 <body class="body">
   <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="container-large-4">
@@ -85,7 +85,7 @@
           <a href="contact-and-quote.html" class="uui-button is-button-large white w-inline-block">
             <div>Request a Quote</div>
           </a>
-          </div><img src="images/Bloom.svg" loading="lazy" style="opacity:0" data-w-id="5952e3c4-42ba-d439-0f79-6bef4d340eb4" alt="" class="header-bloom">
+          <div class="rt-hero-motion" aria-label="Animated industrial roller"><svg viewbox="0 0 210 78" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><lineargradient id="rt-mini-coat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#687bc2"></stop><stop offset=".35" stop-color="#263b87"></stop><stop offset=".75" stop-color="#142468"></stop><stop offset="1" stop-color="#5064aa"></stop></lineargradient><lineargradient id="rt-mini-steel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a5b2c4"></stop><stop offset=".4" stop-color="#f1f4f9"></stop><stop offset="1" stop-color="#7c8aa0"></stop></lineargradient></defs><ellipse cx="105" cy="68" rx="84" ry="4" fill="#14246e" opacity=".07"></ellipse><path d="M18 34h22v13H18c-4 0-4-13 0-13Z" fill="url(#rt-mini-steel)"></path><path d="M45 15h105a18 25 0 0 1 0 50H45a18 25 0 0 1 0-50Z" fill="url(#rt-mini-coat)" stroke="#334884" stroke-width=".8"></path><ellipse cx="150" cy="40" rx="18" ry="25" fill="#4b61a4" stroke="#a4b5e4" stroke-width="1"></ellipse><svg x="132" y="15" width="36" height="50" viewbox="0 0 50 50" preserveaspectratio="none"><g class="rt-mini-spin"><circle cx="25" cy="25" r="19" fill="none" stroke="#cad4f0" stroke-width="1" opacity=".55"></circle><path d="M25 6v8m19 11h-8M25 44v-8M6 25h8" stroke="#d6dff7" stroke-width="2" opacity=".85"></path><circle cx="25" cy="8" r="2.2" fill="#d38277"></circle></g></svg><path d="M150 34h35a5 6.5 0 0 1 0 13h-35a5 6.5 0 0 1 0-13Z" fill="url(#rt-mini-steel)" stroke="#8999ae" stroke-width=".5"></path><ellipse cx="185" cy="40.5" rx="5" ry="6.5" fill="#aab8ca"></ellipse></svg><button type="button" class="rt-motion-toggle" aria-label="Pause roller animation" aria-pressed="false">Pause</button></div></div><img src="images/Bloom.svg" loading="lazy" style="opacity:0" data-w-id="5952e3c4-42ba-d439-0f79-6bef4d340eb4" alt="" class="header-bloom">
       </div>
     </div>
   </section>
@@ -216,9 +216,9 @@
         </div>
     </div>
   </section>
-  <section class="rt-explorer" aria-labelledby="rt-explorer-title" id="roller-layers">
- <div class="rt-explorer-heading"><span class="rt-eyebrow">A CLOSER LOOK</span><h2 id="rt-explorer-title" style="scroll-margin-top:28px">Precision, layer by layer.</h2><p>Select a layer to explore a typical covered roller.</p></div>
- <div class="rt-explorer-grid">
+  <section class="rt-explorer" aria-labelledby="rt-explorer-title" id="roller-layers" data-product="roller">
+ <div class="rt-explorer-heading"><span class="rt-eyebrow">A CLOSER LOOK</span><h2 id="rt-explorer-title" style="scroll-margin-top:28px">Precision, layer by layer.</h2><p>Choose a roller or sleeve, then select a layer to explore its construction.</p><div class="rt-product-switch" role="group" aria-label="Choose roller or sleeve"><button type="button" data-roller-product="roller" aria-pressed="true" aria-controls="rt-construction-view">Covered roller</button><button type="button" data-roller-product="sleeve" aria-pressed="false" aria-controls="rt-construction-view">Covered sleeve</button></div></div>
+ <div class="rt-explorer-grid" id="rt-construction-view">
   <figure class="rt-figure" aria-label="Interactive illustration of a covered industrial roller">
    <div class="rt-drawing-meta"><span>ROLLER CROSS-SECTION</span><span>LAYER 03</span></div>
    <div class="rt-view-controls"><span>Explore the construction</span><button type="button" class="rt-explode-toggle" aria-pressed="false" aria-controls="rt-roller-drawing">Separate layers <span aria-hidden="true">↗</span></button></div><svg class="rt-roller" viewbox="0 0 740 460" xmlns="http://www.w3.org/2000/svg" aria-labelledby="rt-svg-title rt-svg-desc" id="rt-roller-drawing">
@@ -240,11 +240,11 @@
      <path d="M470 173a77 97 0 1 1 0 194a77 97 0 1 1 0-194Z M470 176a74 94 0 1 1 0 188a74 94 0 1 1 0-188Z" fill="#d26857" fill-rule="evenodd" stroke="#b94b3b" stroke-width="1.4"></path></g>
     <g class="rt-layer" data-roller-layer="core" role="button" tabindex="0" aria-label="Select steel core" aria-pressed="false">
      <ellipse cx="470" cy="270" rx="74" ry="94" fill="url(#rt-face)" stroke="#8694a5" stroke-width="1.5"></ellipse>
-     <ellipse cx="470" cy="270" rx="48" ry="61" fill="none" stroke="#f6f8fb" stroke-width="1" opacity=".7"></ellipse>
-     <path d="M470 245h140a19 25 0 0 1 0 50H470a19 25 0 0 1 0-50Z" fill="url(#rt-steel)" stroke="#8391a1" stroke-width="1.5"></path>
+     <ellipse cx="470" cy="270" rx="48" ry="61" fill="none" stroke="#f6f8fb" stroke-width="1" opacity=".7" class="rt-core-face-detail"></ellipse>
+     <g class="rt-front-journal"><path d="M470 245h140a19 25 0 0 1 0 50H470a19 25 0 0 1 0-50Z" fill="url(#rt-steel)" stroke="#8391a1" stroke-width="1.5"></path>
      <ellipse cx="610" cy="270" rx="19" ry="25" fill="#aebbc9" stroke="#7f8fa2" stroke-width="1.5"></ellipse>
      <ellipse cx="610" cy="270" rx="7" ry="10" fill="#657488"></ellipse>
-    </g>
+    </g><g class="rt-sleeve-bore" aria-hidden="true"><ellipse cx="470" cy="270" rx="51" ry="65" fill="#27346a" stroke="#7b8ca4" stroke-width="2"></ellipse><path d="M470 205a51 65 0 0 0 0 130" fill="none" stroke="#142043" stroke-width="5"></path><path d="M479 208a51 65 0 0 1 0 124" fill="none" stroke="#8392ab" stroke-width="1.5" opacity=".55"></path></g></g>
     <g class="rt-diagram-label" aria-hidden="true"><g data-roller-callout="covering"><path d="M375 172v-63h-70"></path><circle cx="375" cy="172" r="4"></circle><text x="277" y="114">03</text></g><g data-roller-callout="bonding"><path d="m529 209 65-75h36"></path><circle cx="529" cy="209" r="4"></circle><text x="644" y="139">02</text></g><g data-roller-callout="core"><path d="m516 324 65 44h49"></path><circle cx="516" cy="324" r="4"></circle><text x="644" y="373">01</text></g></g></svg>
    <figcaption>Illustrative construction, not to scale. Bonding is shown thicker for clarity; materials and dimensions depend on the application.</figcaption>
   </figure>
@@ -431,5 +431,5 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=667c12444b9d3f0c5b61920a" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-<script src="js/roller-interactive.js?v=20261113-1" defer></script></body>
+<script src="js/roller-interactive.js?v=20261113-3" defer></script></body>
 </html>
