@@ -1,24 +1,5 @@
 (()=>{
  'use strict';
- const motion=document.querySelector('.rt-hero-motion');
- if(motion){
-  const button=motion.querySelector('.rt-motion-toggle');
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  let paused=false,visible=true;
-  const update=()=>{
-   const stopped=paused||reduced.matches||!visible||document.hidden;
-   motion.classList.toggle('is-paused',stopped);
-   button.disabled=reduced.matches;
-   button.textContent=reduced.matches?'Motion off':paused?'Play':'Pause';
-   button.setAttribute('aria-label',reduced.matches?'Animation disabled by reduced-motion preference':paused?'Play roller animation':'Pause roller animation');
-   button.setAttribute('aria-pressed',String(paused||reduced.matches));
-  };
-  button.addEventListener('click',()=>{paused=!paused;update();});
-  reduced.addEventListener('change',update);
-  document.addEventListener('visibilitychange',update);
-  if('IntersectionObserver' in window)new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;update();}).observe(motion);
-  update();
- }
  const explorer=document.querySelector('.rt-explorer');
  if(!explorer)return;
  const descriptions={
