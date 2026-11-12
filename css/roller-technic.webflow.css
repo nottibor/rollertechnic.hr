@@ -10697,8 +10697,18 @@
   outline: 2px solid #0b2275;
   outline-offset: 2px;
 }
-.navbar .nav-dropdown-toggle-5 {
+.navbar .nav-dropdown-toggle-5,
+.navbar .nav-link-4 {
+  display: flex;
+  align-items: center;
   min-height: 44px;
+  padding: 10px 12px;
+  line-height: 24px;
+}
+@media screen and (min-width: 992px) {
+  .navbar .nav-menu-list {
+    align-items: center;
+  }
 }
 .navbar .nav-dropdown-toggle-5 .icon-minus {
   display: none;
