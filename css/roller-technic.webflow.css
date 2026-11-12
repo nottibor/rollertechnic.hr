@@ -10796,3 +10796,43 @@
     transition: none;
   }
 }
+
+/* Content, technical information and page navigation. */
+.cleanup-container { width: min(1120px, 92%); margin-inline: auto; }
+.cleanup-section { padding: 56px 0; font-family: Inter, sans-serif; color: #161c50; }
+.cleanup-section h2 { margin: 0 0 20px; font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1.25; letter-spacing: -.025em; }
+.cleanup-section p, .cleanup-lead, .quote-brief p { color: #41434b; font-size: 16px; line-height: 1.7; }
+.cleanup-section p { max-width: 850px; }
+.cleanup-cta { display: inline-flex; margin-top: 16px; min-height: 44px; padding: 10px 16px; }
+.cleanup-uvex { margin: 32px auto; background: #e8ebf3; border-radius: 16px; width: 94%; padding: 40px 0; }
+.site-breadcrumb { padding-block: 16px 4px; font: 13px/1.6 Inter, sans-serif; color: #505466; }
+.site-breadcrumb ol { display: flex; flex-wrap: wrap; gap: 6px 10px; list-style: none; padding: 0; margin: 0; }
+.site-breadcrumb li { display: flex; align-items: center; gap: 10px; }
+.site-breadcrumb li + li::before { content: '/'; color: #9094a3; }
+.site-breadcrumb a { color: #161c50; text-underline-offset: 3px; }
+.site-breadcrumb [aria-current] { overflow-wrap: anywhere; }
+.spec-table-wrap { max-width: 100%; overflow-x: auto; border: 1px solid #d9ddea; border-radius: 12px; background: #fff; }
+.spec-table { width: 100%; border-collapse: collapse; font: 14px/1.6 Inter, sans-serif; text-align: left; color: #303444; }
+.spec-table caption { text-align: left; padding: 16px; font-weight: 600; color: #161c50; background: #f6f7fa; }
+.spec-table th, .spec-table td { padding: 14px 16px; vertical-align: top; border-top: 1px solid #e1e4ed; }
+.spec-table thead { background: #edf0f7; color: #161c50; }
+.spec-table tbody th { width: 28%; font-weight: 600; }
+.technical-note { margin-top: 16px; font-size: 13px !important; }
+.quote-brief { background: #f2f4f8; border: 1px solid #dce1ec; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+.quote-brief h2 { font: 600 20px/1.35 Inter, sans-serif; margin: 0 0 12px; color: #161c50; }
+.quote-brief a { color: #0b2275; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.gallery-caption { display: block; padding: 10px 8px; color: #343a50; font: 13px/1.5 Inter, sans-serif; }
+.header-logo-block:has(.customer-logo-omial) { padding: 14px; }
+.customer-logo-omial { width: 150px; max-width: 100%; height: auto; }
+.products-section > .cleanup-section { padding-top: 0; }
+.faq-title, .paragraph-standard, .services-paragraph { overflow-wrap: anywhere; }
+@media screen and (max-width: 767px) {
+  .cleanup-section { padding: 32px 0; }
+  .cleanup-container { width: 92%; }
+  .cleanup-section h2 { font-size: 1.65rem; }
+  .spec-table th, .spec-table td { padding: 10px; font-size: 13px; }
+  .spec-table tbody th { width: 34%; }
+  .quote-brief { padding: 16px; }
+  .header-logo-block:has(.customer-logo-omial) { padding: 12px; }
+  .uui-footer04_bottom-wrapper { gap: 16px; }
+}
