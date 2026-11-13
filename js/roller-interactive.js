@@ -1,5 +1,20 @@
 (()=>{
  'use strict';
+
+ const headline=document.querySelector('.rt-hero-headline');
+ if(headline){
+  const root=document.documentElement;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const lines=headline.querySelectorAll('.rt-headline-line');
+  const prepared=root.classList.contains('rt-headline-prep');
+  clearTimeout(window.rtHeadlineFallback);root.classList.remove('rt-headline-prep');
+  let reveal;
+  if(window.gsap&&!reduced.matches&&prepared){
+   headline.dataset.headlineState='playing';
+   reveal=gsap.fromTo(lines,{yPercent:108,autoAlpha:0},{yPercent:0,autoAlpha:1,duration:1.1,stagger:0.16,ease:'power4.out',clearProps:'transform,opacity,visibility',onComplete:()=>{headline.dataset.headlineState='complete';}});
+  }else headline.dataset.headlineState=reduced.matches?'reduced':'fallback';
+  reduced.addEventListener('change',event=>{if(event.matches){if(reveal)reveal.kill();if(window.gsap)gsap.set(lines,{clearProps:'transform,opacity,visibility'});headline.dataset.headlineState='reduced';}});
+ }
  const explorer=document.querySelector('.rt-explorer');
  if(!explorer)return;
  const descriptions={

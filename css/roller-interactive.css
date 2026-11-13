@@ -14,3 +14,7 @@
 /* Distinct roller and sleeve drawings, sharing the same layer controls. */
 .rt-product-switch{display:inline-flex;padding:4px;border:1px solid #d4d9e5;border-radius:7px;background:#f5f6f9;margin-top:24px;gap:4px}.rt-product-switch button{border:1px solid transparent;border-radius:4px;background:none;color:#5a647a;padding:11px 20px;min-height:44px;font:600 13px/1.4 Inter,Arial,sans-serif;cursor:pointer}.rt-product-switch button[aria-pressed="true"]{background:#14266d;color:white;box-shadow:0 2px 4px #14266d12}.rt-product-switch button:focus-visible{outline:3px solid #6f87d4;outline-offset:2px}.rt-sleeve-geometry{display:none}.rt-explorer[data-product="sleeve"] .rt-sleeve-geometry{display:block}.rt-explorer[data-product="sleeve"] .rt-roller-geometry{display:none}.rt-explorer[data-product="sleeve"].is-exploded .rt-sleeve-geometry [data-roller-layer="covering"],.rt-explorer[data-product="sleeve"].is-exploded .rt-sleeve-geometry [data-roller-callout="covering"]{transform:translateX(-12px)}
 @media(max-width:767px){.rt-product-switch{max-width:100%}.rt-product-switch button{font-size:12px;padding:10px 15px}}
+
+/* GSAP headline: clipped line reveals; readable when scripts cannot load. */
+.rt-hero-headline .rt-headline-mask{display:block;overflow:hidden;padding-bottom:.07em;margin-bottom:-.07em}.rt-headline-line{display:block}.rt-headline-prep .rt-headline-line{visibility:hidden}
+@media(prefers-reduced-motion:reduce){.rt-headline-line{visibility:visible!important;opacity:1!important;transform:none!important}}
