@@ -14,6 +14,24 @@
    reveal=gsap.fromTo(lines,{yPercent:108,autoAlpha:0},{yPercent:0,autoAlpha:1,duration:1.1,stagger:0.16,ease:'power4.out',clearProps:'transform,opacity,visibility',onComplete:()=>{headline.dataset.headlineState='complete';}});
   }else headline.dataset.headlineState=reduced.matches?'reduced':'fallback';
   reduced.addEventListener('change',event=>{if(event.matches){if(reveal)reveal.kill();if(window.gsap)gsap.set(lines,{clearProps:'transform,opacity,visibility'});headline.dataset.headlineState='reduced';}});
+  const finePointer=matchMedia('(hover: hover) and (pointer: fine)');
+  const words=[...headline.querySelectorAll('.rt-hover-word')];
+  const wordInners=words.map(word=>word.firstElementChild);
+  const resetWords=()=>{if(window.gsap){gsap.killTweensOf(wordInners);gsap.set(wordInners,{clearProps:'transform,color'});}};
+  words.forEach(word=>{
+   const inner=word.firstElementChild;
+   word.addEventListener('pointerenter',()=>{
+    if(!window.gsap||reduced.matches||!finePointer.matches||headline.dataset.headlineState==='playing')return;
+    gsap.to(inner,{y:-3.5,rotation:-0.3,color:'#314b9b',duration:0.28,ease:'power2.out',overwrite:'auto'});
+   });
+   word.addEventListener('pointerleave',()=>{
+    if(!window.gsap||reduced.matches||!finePointer.matches)return;
+    gsap.to(inner,{y:0,rotation:0,color:'inherit',duration:0.38,ease:'power3.out',overwrite:'auto',clearProps:'transform,color'});
+   });
+  });
+  reduced.addEventListener('change',event=>{if(event.matches)resetWords();});
+  finePointer.addEventListener('change',event=>{if(!event.matches)resetWords();});
+
  }
  const explorer=document.querySelector('.rt-explorer');
  if(!explorer)return;

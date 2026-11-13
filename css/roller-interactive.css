@@ -18,3 +18,6 @@
 /* GSAP headline: clipped line reveals; readable when scripts cannot load. */
 .rt-hero-headline .rt-headline-mask{display:block;overflow:hidden;padding-bottom:.07em;margin-bottom:-.07em}.rt-headline-line{display:block}.rt-headline-prep .rt-headline-line{visibility:hidden}
 @media(prefers-reduced-motion:reduce){.rt-headline-line{visibility:visible!important;opacity:1!important;transform:none!important}}
+
+.rt-hero-headline .rt-headline-mask{padding-top:.12em;margin-top:-.12em}.rt-hover-word,.rt-hover-word-inner{display:inline-block}.rt-hover-word-inner{pointer-events:none}
+@media(prefers-reduced-motion:reduce){.rt-hover-word-inner{transform:none!important;color:inherit!important}}
